@@ -94,7 +94,7 @@ const FlowsMenu = keywordsRespuestas.map(({ keyword, respuesta }) =>
         ['📍 Estamos Ubicados en *Calle La Victoria 165, Guadalupe 13841, La Libertad.*']
     ),
     addKeyword(tres.toString(),contres,'tres', 'Costos','precio','pagar','cuanto','debo pagar','tarifas','pagos','pago','mensualidad','cuota','inversión','valor','gastos').addAnswer(
-        ['*¡Hola!* 👋,Aquí te muestro los *Pagos* 📚:\n\n👏 *Si eres Apto:* \n📩 *Inscripción* : *S/100* \n✅ *Informe de convalidación PRIMER CICLO y SEGUNDO CICLO* : *S/100* \n📚 *Matrícula del Ciclo TERCER CICLO*: *S/* 150\n📚 *Mensualidad del Mes de Marzo:*  *S/150* \n\nSi tienes alguna pregunta o necesitas más información, *¡No dudes en escribirme!* 😊🚀\n\n*Oh también puedes visitar nuestra web y visualizar los costos:*  https://imb.edu.pe/admision/']
+        ['*¡Hola!* 👋,Aquí te muestro los *Pagos* 📚:\n\n👏 *Si eres Apto:* \n📩 *Inscripción* : *S/100* \n✅ *Informe de convalidación PRIMER CICLO y SEGUNDO CICLO* : *S/100* \n📚 *Matrícula del TERCER CICLO*: *S/* 150\n📚 *Mensualidad del Mes de Marzo:*  *S/150* \n\nSi tienes alguna pregunta o necesitas más información, *¡No dudes en escribirme!* 😊🚀\n\n*Oh también puedes visitar nuestra web y visualizar los costos:*  https://imb.edu.pe/admision/']
     ),
     addKeyword(cuatro.toString(), concuatro,'cuatro', 'requisitos','requerimientos','pasos','procedimiento','condiciones','pasos').addAnswer(
         ['*¡Hola!* 👋,Aquí te muestro los *Requisitos* para tu admisión del Instituto *Manuel Banda Online*📚:\n\n🎓 *Requisitos para tu Admisión* 📋\n*✅ Ser mayor de 18 años* 🎂\n*✅ Documento de identificación válido o vigente* 📑\n*✅ Foto Personal Tipo Pasaporte* 📷\n*✅ Certificado de estudios de secundaria* 📚\n*✅ Experiencia laboral mínima de 2 años* 💼\n\nSi *cumples* con estos requisitos y necesitas más información, Por Favor Escriba *Si cumplo* 😊🚀']
@@ -103,7 +103,7 @@ const FlowsMenu = keywordsRespuestas.map(({ keyword, respuesta }) =>
         ['*¡Hola!* 👋,Aquí te muestro los *Formularios* para tu admisión del Instituto *Manuel Banda Online*📚:\n\nEstos son los Formularios que debes completar📋:\n\n*OPCIÓN 1*\n\n📚 *Ficha de Inscripción a IMB Online*: https://docs.google.com/forms/d/e/1FAIpQLScdTYQwrOi1Hwi3b0axiVG8CXYSFM33S1vCKFUXAWJ2I9LQpg/viewform ✍️📙\n\n*Ficha técnica de convalidación por competencias Primer Y Segundo Ciclo*: https://forms.gle/izroccZuJfZwS2F8A \n\n*OPCIÓN 2*\n\n *Convalidación de competencias laborales Primer y Segundo Ciclo*:\nDocumento para descargar en PDF y llenar:\nhttps://bit.ly/Drive-convalidacion-IMB 🏅📚']
     ),
     // Flujos para respuestas predeterminadas
-    addKeyword('.').addAnswer('*¡Hola!* 👋 , Por favor, *elige una opción*  del menú escribiendo el Número correspondiente o escribe *\'menu\'* para volver al *menú principal* y seleccionar otra opción.📩📚'), // Respuesta predeterminada si no coincide con ninguna palabra clave
+    addKeyword('.').addAnswer('*¡Hola!* 👋 , Por favor, escribe *\'menu\'* para mostrar el *menú principal* .📩📚'), // Respuesta predeterminada si no coincide con ninguna palabra clave
 ]);
 
 
