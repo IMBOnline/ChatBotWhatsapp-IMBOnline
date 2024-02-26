@@ -5,7 +5,6 @@ const MockAdapter = require('@bot-whatsapp/database/mock');
 const { NumerosALetras } = require('numero-a-letras');
 require('numero-a-letras');
 
-
 const flowMensajeVoz = addKeyword(EVENTS.VOICE_NOTE)
     .addAnswer(
         '*Disculpe los inconvenientes por el momento no puedo procesar audios, pero puedo ayudarl@ de otras maneras.* \n' +
@@ -16,27 +15,7 @@ const flowMensajeVoz = addKeyword(EVENTS.VOICE_NOTE)
         '4. 📝 *Requisitos*\n' +
         '5. 📋 *Formularios*\n\n' +
         '*Visita nuestra web*: https://imb.edu.pe/ '
-    )
-
-const flowImagen = addKeyword('imagen').addAnswer(
-    'Mira este Gatito de la *U*', {
-        media: './gatou.jpg',
-    }
-);
-
-
-let nombre; // Variable global para almacenar el nombre del usuario
-
-const flowNombre = addKeyword('nombre').addAnswer(
-    'Hola, ¿cuál es tu nombre?', { capture: true },
-
-    async (ctx, { flowDynamic }) => {
-        nombre = ctx.body; // Guarda el nombre proporcionado por el usuario
-        return await flowDynamic(`¡Hola, ${nombre}! ¿En qué puedo ayudarte hoy?`); // Utiliza await antes de flowDynamic
-    }
-);
-
-
+    );
 
 var uno = 1;
 const conUno = NumerosALetras(uno).toLowerCase();
@@ -49,6 +28,7 @@ const contres = NumerosALetras(tres).toLowerCase() ;
 
 var cuatro = 4;
 const concuatro = NumerosALetras(cuatro).toLowerCase();
+
 var cinco = 5;
 const concinco =NumerosALetras(cinco).toLowerCase();
 
@@ -103,25 +83,6 @@ const FlowMenu5 = addKeyword(cinco.toString(), concinco,'sinco','cinco', 'Formul
 
 const FlowsMenus = [FlowMenu1, FlowMenu2, FlowMenu3, FlowMenu4, FlowMenu5,defaultResponse];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const FlowsMenu = keywordsRespuestas.map(({ keyword, respuesta }) =>
     addKeyword(keyword).addAnswer(respuesta)
 ).concat([
@@ -144,18 +105,6 @@ const FlowsMenu = keywordsRespuestas.map(({ keyword, respuesta }) =>
     // Flujos para respuestas predeterminadas
     addKeyword('.').addAnswer('*¡Hola!* 👋 , Por favor, *elige una opción*  del menú escribiendo el Número correspondiente o escribe *\'menu\'* para volver al *menú principal* y seleccionar otra opción.📩📚'), // Respuesta predeterminada si no coincide con ninguna palabra clave
 ]);
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 const main = async () => {
