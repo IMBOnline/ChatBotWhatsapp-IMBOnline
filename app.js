@@ -100,10 +100,3 @@ const main = async () => {
 main().catch((error) => {
     console.error('Error en la función principal:', error);
 });
-
-
-
-main().catch((error) => {
-    console.error('Error en la función principal:', error);
-});
-
