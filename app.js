@@ -40,8 +40,14 @@ const keywordsRespuestas = [
     { keyword: ['Si cumplo', '!Si cumplo¡', 'si cumploo', 'si cumplooo', 'cumplo', 'claro, si cumplo','cumplir','sicum','si cumplo'], 
          respuesta: '*¡Genial!* 😄\n\n*Un coordinador le llamará 📞 en los próximos minutos para que le proporcione más información y los pasos para su inscripción.* 📝'
     },
+
     { keyword: ['ok, gracias', 'ok gracias', 'ok entiendo', 'ok, entiendo','gracias','gracia','vale, gracias', 'vale, entiendo','entendido','entiend'], 
          respuesta: '*¡Perfecto!* 😊 Si tienes más preguntas o necesitas ayuda, estoy aquí para *ayudarte* en lo que necesites. 🚀'
+    },
+
+    {
+      keyword: ['Métodos de Pago','donde pago','depositar','deposito','depósito','pagar','donde pago','que numero','que cuenta','yapeo','cancelo','yape','bcp','banco'],
+         respuesta: '✅ *CUENTAS AUTORIZADAS A DEPOSITAR* ✅\n\n🟪 *YAPE:* 🟪\n👤 *A NOMBRE:* " *WKMB* "\n💰 *NÚMERO:* +51 968686938\n\n🟦 *BCP:* 🟦\n👤 *A NOMBRE: " WKMB SRL* "\n💰 *CTA. AHORRO:* 300-9948336-0-43\n💰 *CCI:* 00230000994833604326\n\n🟥 *BANCO DE LA NACIÓN:* 🟥\n👤 *A NOMBRE:* " *WKMB SRL* "\n💰 *CTA. CORRIENTE:* 00-813-006456\n\n⚠️ *Luego de Realizar Cualquier Tipo de Pago, Por favor adjuntar una Captura o Archivo de Voucher Para que el Coordinador Pueda Confirmalo*✅'
     },
 
 ];
@@ -61,7 +67,7 @@ const FlowsMenu = keywordsRespuestas.map(({ keyword, respuesta }) =>
         ['📍 Estamos Ubicados en *Calle La Victoria 165, Guadalupe 13841, La Libertad.*']
     ),
     addKeyword([tres.toString(),contres,'tres', 'Costos','precio','pagar','cuanto','debo pagar','tarifas','pagos','pago','mensualidad','cuota','inversión','valor','gastos']).addAnswer(
-        ['*¡Hola!* 👋,Aquí te muestro los *Pagos* 📚:\n\n👏 *Si eres Apto:* \n📩 *Inscripción* : *S/100* \n✅ *Informe de convalidación PRIMER CICLO y SEGUNDO CICLO* : *S/100* \n📚 *Matrícula del TERCER CICLO*: *S/* 150\n📚 *Mensualidad del Mes de Marzo:*  *S/150* \n\nSi tienes alguna pregunta o necesitas más información, *¡No dudes en escribirme!* 😊🚀\n\n*Oh también puedes visitar nuestra web y visualizar los costos:*  https://imb.edu.pe/admision/']
+        ['*¡Hola!* 👋,Aquí te muestro los *Pagos* 📚:\n\n👏 *Si eres Apto:* \n📩 *Inscripción* : *S/100* \n✅ *Informe de convalidación PRIMER CICLO y SEGUNDO CICLO* : *S/100* \n📚 *Matrícula del TERCER CICLO*: *S/* 150\n📚 *Mensualidad del Mes de Marzo:*  *S/150* \n\n✅Si deseas Saber los Métodos de Pago , digite *"Métodos de Pago"* 💳\n\nSi tienes alguna pregunta o necesitas más información, *¡No dudes en escribirme!* 😊🚀\n\n*Oh también puedes visitar nuestra web y visualizar los costos:*  https://imb.edu.pe/admision/']
     ),
     addKeyword([cuatro.toString(), concuatro,'cuatro', 'requisitos','requerimientos','pasos','procedimiento','condiciones','pasos']).addAnswer(
         ['*¡Hola!* 👋,Aquí te muestro los *Requisitos* para tu admisión del Instituto *Manuel Banda Online*📚:\n\n🎓 *Requisitos para tu Admisión* 📋\n*✅ Ser mayor de 18 años* 🎂\n*✅ Documento de identificación válido o vigente* 📑\n*✅ Foto Personal Tipo Pasaporte* 📷\n*✅ Certificado de estudios de secundaria* 📚\n*✅ Experiencia laboral mínima de 2 años* 💼\n\nSi *cumples* con estos requisitos y necesitas más información, Por Favor Escriba *Si cumplo* 😊🚀']
@@ -90,6 +96,12 @@ const main = async () => {
 
     QRPortalWeb();
 };
+
+main().catch((error) => {
+    console.error('Error en la función principal:', error);
+});
+
+
 
 main().catch((error) => {
     console.error('Error en la función principal:', error);
