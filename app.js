@@ -26,7 +26,7 @@ const conSeis =NumerosALetras(seis).toLowerCase();
 
 const keywordsRespuestas = [
     // Opciones del menú
-    { keyword: ['Buenos dias', 'días','estudi', 'dia', 'Buenas tardes', 'hi','ola','tardes', 'buenas noches', 'noches', 'buenas', 'buen dia', 'buen', 'que tal', 'hola', 'como estas', 'info por favor', 'info porfavor', 'info', 'informacion', 'información', 'holas', 'hello', 'Vi esto en Facebook...', '¿Pueden brindarme más información?', 'Necesito información', 'Me puede brindar información','brindarme','brindar','informa','necesito'],
+    { keyword: ['Buenos dias', 'días','estudi', 'dia', 'Buenas tardes', 'hi','ola','tardes', 'buenas noches', 'noches', 'buenas', 'buen dia', 'buen', 'que tal', 'hola', 'como estas', 'info por favor', 'info porfavor', 'info', 'informacion', 'información', 'holas', 'hello', 'Vi esto en Facebook...', '¿Pueden brindarme más información?', 'Necesito información', 'Me puede brindar información','brindarme','brindar','informa','necesito', '¿Dónde están ubicados?'],
         respuesta: `*¡Buen día!* 👋 \nSoy El Asesor *IMB ONLINE* 📚\nEstoy aquí para asistirte *paso a paso. ¿Cómo Podemos Ayudarte Hoy?🤔*\n\nPor favor, *digite el número de la opción* a elegir:\n\n*1*. *Consulta con el Coordinador* 📞\n*2*. *Ubicación de Nuestro Instituto* 🌎\n*3*. *Información sobre Costos* 💰\n*4*. *Requisitos de Admisión* 📝\n*5*. *Acceso a Formularios* 📋\n*6. Carreras Técnicas* 🗃️ 🚀 \n\n *Nuestra web*: https://imb.edu.pe/`
     },
 
@@ -75,7 +75,7 @@ const FlowsMenu = keywordsRespuestas.map(({ keyword, respuesta }) =>
     addKeyword([cinco.toString(), concinco,'sinco','cinco', 'Formularios','registro','registrarme','inscripción','inscribirme','datos','admision','Inscripción','admisión','matrícula','matriculas','matricula','Matricular','inscri']).addAnswer(
         ['*¡Hola!* 👋,Aquí te muestro los *Formularios* para tu admisión del Instituto *Manuel Banda Online*📚:\n\nEstos son los Formularios que debes completar📋:\n\n*OPCIÓN 1*\n\n📚 *Ficha de Inscripción a IMB Online*: https://docs.google.com/forms/d/e/1FAIpQLScdTYQwrOi1Hwi3b0axiVG8CXYSFM33S1vCKFUXAWJ2I9LQpg/viewform ✍️📙\n\n📚 *Ficha técnica de convalidación por competencias Primer Y Segundo Ciclo*: https://forms.gle/izroccZuJfZwS2F8A \n\n*OPCIÓN 2*\n\n📚 *Convalidación de competencias laborales Primer y Segundo Ciclo*:\nDocumento para descargar en PDF y llenar:\nhttps://bit.ly/Drive-convalidacion-IMB 🏅📚']
     ),
-    addKeyword([seis.toString(),conSeis,'carrera','carera','profesion','profesión','vocación','vocacion','plan de estudios','plan de','especialización','Especializacion','profesi','carrer']).addAnswer(
+    addKeyword([seis.toString(),conSeis,'carreras', 'carrera','carera','profesion','profesión','vocación','vocacion','plan de estudios','plan de','especialización','Especializacion','profesi','carrer', 'Cuales son las carreras', '¿Cuales son las carreras?']).addAnswer(
         ['*¡Hola!* 👋, Por Ahora La Única Carrera Profesional Técnica Online que Contamos Es *Administración de Empresas*📚\nSi Deseas Inscribirte Escribe *\'Inscripción\'* y te brindaré las *Fichas de Inscripción y Convalidación* 📖📚\n\nSi tienes alguna pregunta o necesitas más información, *¡No dudes en escribirme!* 😊🚀']
     ),
     // Flujos para respuestas predeterminadas
