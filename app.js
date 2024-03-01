@@ -41,7 +41,7 @@ const keywordsRespuestas = [
          respuesta: '*¡Genial!* 😄\n\n*Un coordinador le llamará 📞 en los próximos minutos para que le proporcione más información y los pasos para su inscripción.* 📝'
     },
 
-    { keyword: ['ok, gracias', 'ok gracias', 'ok entiendo', 'ok, entiendo','gracias','gracia','vale, gracias', 'vale, entiendo','entendido','entiend'], 
+    { keyword: ['ok, gracias', 'ok gracias', 'ok entiendo', 'ok, entiendo','gracias','gracia','vale, gracias', 'vale, entiendo','entendido','entiend', 'muchas gracias'], 
          respuesta: '*¡Perfecto!* 😊 Si tienes más preguntas o necesitas ayuda, estoy aquí para *ayudarte* en lo que necesites. 🚀'
     },
 
