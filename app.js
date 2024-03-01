@@ -30,7 +30,7 @@ const keywordsRespuestas = [
         respuesta: `*¡Buen día!* 👋 \nSoy El Asesor *IMB ONLINE* 📚\nEstoy aquí para asistirte *paso a paso. ¿Cómo Podemos Ayudarte Hoy?🤔*\n\nPor favor, *digite el número de la opción* a elegir:\n\n*1*. *Consulta con el Coordinador* 📞\n*2*. *Ubicación de Nuestro Instituto* 🌎\n*3*. *Información sobre Costos* 💰\n*4*. *Requisitos de Admisión* 📝\n*5*. *Acceso a Formularios* 📋\n*6. Carreras Técnicas* 🗃️ 🚀 \n\n *Nuestra web*: https://imb.edu.pe/`
     },
 
-    { keyword: ['Cómo son las clases', 'Que modalidad es?', 'Es presencial o remoto?','presencial','remoto','desde'],
+    { keyword: ['Cómo son las clases', 'Que modalidad es?', 'Es presencial o remoto?','presencial','remoto','desde', 'es virtual?', 'es virtual', 'es clase presencial', 'es clase presencial?'],
      respuesta: '👋 Hola, el *Instituto Manuel Banda Online* es de modalidad a distancia *(100% virtual) orientada para adultos que trabajan.*'
     },
     
