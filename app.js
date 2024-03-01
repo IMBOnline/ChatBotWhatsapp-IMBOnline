@@ -49,6 +49,12 @@ const keywordsRespuestas = [
       keyword: ['Métodos de Pago','donde pago','depositar','deposito','depósito','pagar','donde pago','que numero','que cuenta','yapeo','cancelo','yape','bcp','banco'],
          respuesta: '✅ *CUENTAS AUTORIZADAS A DEPOSITAR* ✅\n\n🟪 *YAPE:* 🟪\n👤 *A NOMBRE:* " *WKMB* "\n💰 *NÚMERO:* +51 968686938\n\n🟦 *BCP:* 🟦\n👤 *A NOMBRE: " WKMB SRL* "\n💰 *CTA. AHORRO:* 300-9948336-0-43\n💰 *CCI:* 00230000994833604326\n\n🟥 *BANCO DE LA NACIÓN:* 🟥\n👤 *A NOMBRE:* " *WKMB SRL* "\n💰 *CTA. CORRIENTE:* 00-813-006456\n\n⚠️ *Luego de Realizar Cualquier Tipo de Pago, Por favor adjuntar una Captura o Archivo de Voucher Para que el Coordinador Pueda Confirmalo*✅'
     },
+    {
+       keyword: ['¿Es título técnico no?', 'Es título técnico', 'es titulo tecnico?', 'es titulo técnico', 'es título tecnico?', 'ofrecen titulo tecnico?', '¿ofrecen título técnico?'],
+         respuesta: '👋 Buen día, si es un *Título profesional Técnico en Administración de Empresas* a nombre de la Nación. 🇵🇪'
+    },
+    
+        
 
 ];
 
